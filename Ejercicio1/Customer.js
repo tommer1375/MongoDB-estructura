@@ -1,0 +1,8 @@
+
+db.createCollection( 'Customer', {validator: {$jsonSchema: {bsonType: 'object',title:'Customer',required: [         'Name'],properties: {Name: {bsonType: 'string'},Information: {bsonType: 'object',
+title:'object',required: [         'Phone_Number',          'Email',          'Registration_Date'],properties: {Address: {bsonType: 'object',
+title:'object',required: [         'Street',          'Number',          'Floor',          'Door',          'Postal_Code',          'City',          'Country'],properties: {Street: {bsonType: 'string'},Number: {bsonType: 'int'},Floor: {bsonType: 'int'},Door: {bsonType: 'int'},Postal_Code: {bsonType: 'int'},City: {bsonType: 'string'},Country: {bsonType: 'string'}}},Phone_Number: {bsonType: 'string'},Email: {bsonType: 'string'},Registration_Date: {bsonType: 'date'}}},Last Sales: {bsonType: 'object',
+title:'object',required: [         'Brand',          'Material',          'Price',          'Glasses'],properties: {Brand: {bsonType: 'string'},Material: {bsonType: 'string'},Price: {bsonType: 'double'},Glasses: {bsonType: 'object',
+title:'object',required: [         'Graduation',          'Glass_Color'],properties: {Graduation: {bsonType: 'object',
+title:'object',required: [         'Eye_left',          'Eye-right'],properties: {Eye_left: {bsonType: 'double'},Eye-right: {bsonType: 'double'}}},Glass_Color: {bsonType: 'object',
+title:'object',required: [         'Eye_left',          'Eye_right'],properties: {Eye_left: {bsonType: 'string'},Eye_right: {bsonType: 'string'}}}}}}}}         }      }});  
