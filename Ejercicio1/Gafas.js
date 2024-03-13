@@ -1,2 +1,0 @@
-
-db.createCollection( 'Gafas', {validator: {$jsonSchema: {bsonType: 'object',title:'Gafas',required: [         '_idGafas',          'Marca',          'Graduacion_Ojo_Izq'],properties: {_idGafas: {bsonType: 'objectId'},Marca: {bsonType: 'string'},Graduacion_Ojo_Izq: {bsonType: 'double'},Graduacion_Ojo_Dcho: {bsonType: 'double'},Color_Ojo_Izq: {bsonType: 'string'},Color_Ojo_Dcho: {bsonType: 'string'},Precio: {bsonType: 'double'}}         }      }});  
